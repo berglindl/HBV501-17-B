@@ -41,10 +41,10 @@ public class HomeController {
 
         // Since this small example is for a user, let's create some attributes
         // that users might usually have in a system
-        String name = "Rincewind";
-        String job  = "Wizzard";
-        String email = "rincewizz@unseenuni.edu";
-        String description = "most likely to survive in a dungeon dimension.";
+        String fname = "John";
+        String lname  = "Doe";
+        String email = "jod11@hi.is";
+        String course = "Computer science";
 
 
         // Since we want our attributes regarding the user always in the same format,
@@ -52,19 +52,20 @@ public class HomeController {
 
         // Let's assume that the name, job and description always have
         // the first character in upper case
-        name = stringService.convertsFirstCharInStringToUpperCase(name);
-        job = stringService.convertsFirstCharInStringToUpperCase(job);
-        description = stringService.convertsFirstCharInStringToUpperCase(description);
+        
+        // óþarfi imo 
+        fname = stringService.convertsFirstCharInStringToUpperCase(fname);
+        lname = stringService.convertsFirstCharInStringToUpperCase(lname);
 
         // Let's assume that we always want e-mail in lower case
         email = stringService.convertStringToLowerCase(email);
 
 
         // Now let's add the attributes to the model
-        model.addAttribute("name",name);
-        model.addAttribute("job",job);
-        model.addAttribute("email",email);
-        model.addAttribute("description",description);
+        model.addAttribute("fname", fname);
+        model.addAttribute("lname", lname);
+        model.addAttribute("email", email);
+        model.addAttribute("course", course);
 
         // By adding attributes to the model, we can pass information from the controller
         // to the view (the .jsp file).
