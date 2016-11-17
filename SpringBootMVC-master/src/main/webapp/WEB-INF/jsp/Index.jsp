@@ -6,16 +6,31 @@
 <html lang="en">
 
     <head>
-        <title>Project Title</title>
+        <title>StudyBuddy</title>
+        <link rel="stylesheet" type="text/css" href="<c:url value="/css/StudyBuddy.css"/>"/>
     </head>
     <body>
-
-    <h1>HBV501G Project Spring Boot Skeleton</h1>
-    <p>This skeleton of a Spring Boot Web project was made to help groups get started on their projects without to much hassle.</p>
-
-    <ul>
-        <li><a href="/postit">Click here for Persistence Layer Demo</a></li>
-    </ul>
+        <div class="header-container">
+            <h2 class="header-1">StudyBuddy</h1>
+        </div>
+        <div class="start-screen-container">
+            <h1 class="header-2">Welcome back!</h1>
+            <%-- We have yet to link the buttons and do the forms properly, currently just a placeholder--%>
+            <%-- However user has been linked --%>
+            <div>
+                <form action="/">
+                    <input type="submit" value="See grade progress">
+                </form>
+                <form action="/">
+                    <input type="submit" value="See calendar">
+                </form>
+                <form action="/">
+                    <input type="submit" value="See notes">
+                </form>
+                <form action="/user">
+                    <input type="submit" value="See user">
+                </form>
+            </div>
+        </div>
     </body>
-    <footer>Class HBV501G, University of Iceland, Fall 2015</footer>
 </html>

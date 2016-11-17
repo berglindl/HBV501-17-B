@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * Small controller just to show that you can have multiple controllers
  * in your project
  */
+/*
 @Controller
 @RequestMapping("/demo") // Notice here that the Request Mapping is set at the Class level
 public class DemoController {
@@ -20,3 +21,4 @@ public class DemoController {
 
 
 }
+*/
