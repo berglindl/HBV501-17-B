@@ -16,16 +16,16 @@ public class Notes {
 	private Long id;
 
 	private String title;
-	private String note;
+	private String notes;
 
 	//Empty so we can create empty Notes to add to our model to use with our form
 	public Notes(){
 
 	}
 
-	public Notes(String title, String note){
+	public Notes(String title, String notes){
 		this.title = title;
-		this.note = note;
+		this.notes = notes;
 	}
 
 	public Long getId(){
@@ -44,19 +44,19 @@ public class Notes {
 		this.title = title;
 	}
 
-	public String getNote(){
-		return note;
+	public String getNotes(){
+		return notes;
 	}
 
-	public void setNote(String note){
-		this.note = note;
+	public void setNotes(String notes){
+		this.notes = notes;
 	}
 
 	//Easy debugging
 	@Override
 	public String toString(){
 		return String.format(
-			"Notes[title=%s, note=%s]",
-			title, note);
+			"Notes[title=%s, notes=%s]",
+			title, notes);
 	}
 }

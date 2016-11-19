@@ -42,24 +42,9 @@ public class HomeController {
         // Since this small example is for a user, let's create some attributes
         // that users might usually have in a system
         String fname = "John";
-        String lname  = "Doe";
+        String lname = "Doe";
         String email = "jod11@hi.is";
         String course = "Computer science";
-
-
-        // Since we want our attributes regarding the user always in the same format,
-        // we are going to convert some strings using our StringManipulationService
-
-        // Let's assume that the name, job and description always have
-        // the first character in upper case
-        
-        // óþarfi imo 
-        fname = stringService.convertsFirstCharInStringToUpperCase(fname);
-        lname = stringService.convertsFirstCharInStringToUpperCase(lname);
-
-        // Let's assume that we always want e-mail in lower case
-        email = stringService.convertStringToLowerCase(email);
-
 
         // Now let's add the attributes to the model
         model.addAttribute("fname", fname);
